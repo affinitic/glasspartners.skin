@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="Skin package for Glass Partners website">
+
+    <object name="glasspartners_skin_images"
+            meta_type="Filesystem Directory View"
+            directory="glasspartners.skin:skins/glasspartners_skin_images"/>
+
+    <skin-path name="Skin package for Glass Partners website"
+               based-on="Sunburst Theme">
+        <layer name="glasspartners_skin_images"
+               insert-after="custom"/>
+
+    </skin-path>
+
+</object>
